@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="//code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+</head>
+<body>
+	<!--basi HTML form-->
+	<div style="text-align: center">
+<form action="/action_page.php" target="_blank" method="post" style="width: ">
+  First name:
+  <input type="text" name="first name" placeholder="First name" required ><br>
+  Last name:
+  <input type="text" name="last name" placeholder="Last name"><br>
+  Address Line 1:
+  <input type="text" required><br>
+  line 2: 
+  <input type="text"><br>
+  Mail Id:
+  <input type="mail" name="Mail" placeholder="gmail" autocomplete><br>
+  Gender:
+  <input type="radio" name="gender" value="male" checked>male
+  <input type="radio"name="gender" value="female">female
+  <input type="radio"name="gender" value="others">others<br>
+  course selection:
+  BE<input type="checkbox" name="BE">ECE<input type="checkbox" name="BE">EEE<input type="checkbox" name="BE">CSE<br>
+  <input type="submit" value="submit">&nbsp<input type="reset" value="reset">&nbsp<input type="button" value="cancel"><br><br><br><br><br>
+  </form>
+</div>
+  <!--basic html form with CSS-->
+  
+  <div style="text-align:center">
+  	<style type="text/css">
+  		.border1{
+  			border-radius: 4px;
+  			width:200px;
+  			height:20px;
+  		}
+  		.color1{
+  			border-radius: 4px;
+  			font-size:20px;
+  			background-color:green;
+  			color:white;
+  		}
+  		.color2{
+  			border-radius: 4px;
+  			font-size:20px;
+  			background-color:orange;
+  			color:white;
+  		}
+  		.color3{
+       border-radious:4px;
+       font-size:20px;
+       background-color:red;
+       color:white;
+
+  		}
+  	</style>
+  	<form>
+  		First name:<input type="text" placeholder="First name" class="border1"><br><br>
+  		last name:<input type="text" placeholder="Last name" class="border1"><br><br>
+  		Address line 1:<input type="text" name="Adress"class="border1"><br><br>
+  		Line 2:<input type="text" name="Address" class="border1"><br><br>
+        Mail Id:<input type="email" name="mail" class="border1" placeholder="gmail"required><br><br>
+        Gender:<input type="radio" name="gender" value="male"checked>male
+        <input type="radio" name="gender" value="female">female
+        <input type="radio" name="gender" value="others">others<br><br>
+        Course selection:BE:<input type="checkbox">ECE <input type="checkbox">EEE<input type="checkbox">CSE<br><br>
+        <input class="color1" type="submit" value="submit">
+        <input class="color2" type="reset" value="reset">
+        <input class="color3" type="button" value="cancel">
+
+  	</form>
+  </div><br><br><br><br><br>
+  <!--News letter subcription formu sing css-->
+<div class="cls1" style="text-align: center">
+	<style type="text/css">
+		.cls1{
+			padding: 20px;
+    
+		}
+		.input1[type=text], input1[type=submit] {
+    width: 50%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.input2[type=checkbox] {
+    margin-top: 16px;
+}
+
+.input2[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    width: 50%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+	</style>
+	<form  action="/action_page.php">
+       <input class="input1" type="text" name="name" placeholder="name" required>
+       <input class="input1" type="text" name="mail" placeholder="Email address" required>
+       
+       <div class="cls1">
+       	<label><input class="input2" type="checkbox" name="subcribe" checked>Daily Newsletter</label><br>
+       <input class="input2" type="submit" value="subscribe">
+       </div>
+		<form>
+</div><br><br><br><br>
+<div style="text-align:center ">
+	<style type="text/css">
+     .frm1 {border: 3px solid #f1f1f1;}
+     .input1 {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.button1 {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+.img2 {
+    
+    width: 40%;
+    border-radius: 50%;
+	</style>
+	<h1>Login form</h1>
+	<form class="frm1" action="/action_page.php">
+		<div class=img1>
+		<img src="profile.png" alt="profile pic" class="img2">
+		</div>
+		<div class="container">
+			<label for="name"><strong>Username</strong></label>
+			<input class="input1" type="text" name="name" placeholder="Enter Username" required="required">
+			<label for="psw"><strong>Password</strong></label>
+			<input class="input1" type="password" name="psw" placeholder="Enter password" required="required">
+			<button class="button1" type="submit">Login</button>
+            <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+            </div>
+            <div class="container" style="background-color:#f1f1f1">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+			</div>
+		
+	</form>
+</div>
+
+
+
+
+
+
+  
+	
+
+</body>
+</html>
